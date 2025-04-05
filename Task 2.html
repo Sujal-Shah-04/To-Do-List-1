@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Task Categories</h2>
+            <ul>
+                <li onclick="filterTasks('all')">All</li>
+                <li onclick="filterTasks('code')">Coding</li>
+                <li onclick="filterTasks('daily')">Daily Activities</li>
+                <li onclick="filterTasks('debug')">Debugging</li>
+                <li onclick="filterTasks('Tasks Completed')">Tasks Completed</li>
+                <li onclick="filterTasks('Tasks Not Completed')">Tasks Not Completed</li>
+            </ul>
+            <button id="toggleTheme">Toggle Theme</button>
+        </aside>
+        <main class="todo-container">
+            <h2>To-Do List</h2>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Enter a mission...">
+                <select id="category">
+                    <option value="code">Coding</option>
+                    <option value="daily">Daily Activities</option>
+                    <option value="debug">Debugging</option>
+                </select>
+                <div class="button-group">
+                    <button onclick="addTask()">Execute</button>
+                    <button onclick="clearAllTasks()">Abort All</button>
+                </div>
+            </div>
+            
+            <ul id="taskList"></ul>
+        </main>
+    </div>
+    <script src="scriptss.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background: #0d1117;
+    color: #ffffff;
+    transition: background 0.3s;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: #161b22;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+    background: #ffffff;
+    color: #0d1117;
+    border-radius: 6px;
+}
+
+#toggleTheme {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0d1117;
+}
+
+.todo-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background: #161b22;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    background: #0d1117;
+    color: #ffffff;
+}
+
+button {
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0d1117;
+}
+
+button:hover {
+    background: #ffffff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px;
+    background: #0d1117;
+    margin-top: 6px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+    border: 1px solid #ffffff;
+}
+
+li:hover {
+    background: #161b22;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.controls {
+    margin-top: 15px;
+    text-align: center;
+}
+.dark-theme {
+    background: #000;
+    color: rgb(255, 255, 255);
+}
+
+.dark-theme .todo-container {
+    background: #121212;
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+}
+
+.dark-theme .sidebar {
+    background: #1a1a1a;
+}
+
+.dark-theme button {
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
